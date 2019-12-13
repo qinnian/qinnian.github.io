@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Visual Studio 2019 配置 OpenGL, 钦念">
-    <meta name="description" content="VS2019，跟我左边画一条龙">
+    <meta name="keywords" content="计算机图形学知识点总结, 钦念">
+    <meta name="description" content="更新中">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Visual Studio 2019 配置 OpenGL | 钦の念</title>
+    <title>计算机图形学知识点总结 | 钦の念</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -303,7 +303,7 @@
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = '';
+        let pwd = '121314';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
@@ -316,12 +316,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Visual Studio 2019 配置 OpenGL</h1>
+                    <h1 class="description center-align post-title">计算机图形学知识点总结</h1>
                 </div>
             </div>
         </div>
@@ -438,8 +438,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/OpenGL/">
-                                <span class="chip bg-color">OpenGL</span>
+                            <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9B%BE%E5%BD%A2%E5%AD%A6/">
+                                <span class="chip bg-color">计算机图形学</span>
                             </a>
                         
                     </div>
@@ -450,8 +450,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Computer-Graphics/" class="post-category">
-                                Computer Graphics
+                            <a href="/categories/%E8%80%83%E8%AF%95/" class="post-category">
+                                考试
                             </a>
                         
                     </div>
@@ -463,7 +463,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-11-07
+                    2019-12-09
                 </div>
                 
 
@@ -472,14 +472,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    812
+                    250
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    1 分
                 </div>
                 
 				
@@ -495,115 +495,26 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="1-下载VS2019"><a href="#1-下载VS2019" class="headerlink" title="1. 下载VS2019"></a>1. 下载VS2019</h2><p>去<a href="https://visualstudio.microsoft.com/zh-hans/downloads/" target="_blank" rel="noopener">官网</a>，选择 <code>VS 2019</code> 社区版进行下载。</p>
-<p><img src="./medias/loading.gif" data-original="https://pic.superbed.cn/item/5dc2d2298e0e2e3ee93f3d7b.jpg" alt="选择Community"></p>
-<h2 id="2-下载-GLEW"><a href="#2-下载-GLEW" class="headerlink" title="2. 下载 GLEW"></a>2. 下载 GLEW</h2><p>去<a href="http://glew.sourceforge.net/" target="_blank" rel="noopener">官网</a>，下载 Binaries Windows 32-bit and 64-bit。</p>
-<p><img src="./medias/loading.gif" data-original="https://pic.superbed.cn/item/5dc2d3e58e0e2e3ee93f91c2.jpg" alt="下载 GLEW"></p>
-<h2 id="3-下载GLFW"><a href="#3-下载GLFW" class="headerlink" title="3. 下载GLFW"></a>3. 下载GLFW</h2><p>去<a href="http://www.glfw.org/download.html" target="_blank" rel="noopener">官网</a>，下载 <code>Windows pre-compiled binaries 32-bit</code>（64 位会出现莫名其妙的问题）</p>
-<p><img src="./medias/loading.gif" data-original="https://pic.superbed.cn/item/5dc2d49d8e0e2e3ee93fafd4.jpg" alt="下载GLFW"></p>
-<h2 id="4-配置-OpenGL"><a href="#4-配置-OpenGL" class="headerlink" title="4. 配置 OpenGL"></a>4. 配置 OpenGL</h2><h3 id="4-1-新建-C-空项目"><a href="#4-1-新建-C-空项目" class="headerlink" title="4.1 新建 C++ 空项目"></a>4.1 新建 C++ 空项目</h3><p>打开 vs2019，<code>文件 —&gt; 新建 -&gt; 项目 -&gt; 空项目</code> ，命名为 <code>OpenGLExercise01</code></p>
-<p><img src="./medias/loading.gif" data-original="https://ae01.alicdn.com/kf/H2e49b6b7207e4cb9be68e99a24cbe4adB.jpg" alt="新建 C++ 空项目"></p>
-<h3 id="4-2-创建-main-cpp-源文件"><a href="#4-2-创建-main-cpp-源文件" class="headerlink" title="4.2 创建 main. cpp 源文件"></a>4.2 创建 main. cpp 源文件</h3><p>右侧 <code>解决方案资源管理器</code> 下，<code>源文件 —&gt; 添加 —&gt; 新建项</code> ，创建名为 <code>main.cpp</code>源文件</p>
-<h3 id="4-3-开始配置-OpenGL"><a href="#4-3-开始配置-OpenGL" class="headerlink" title="4.3 开始配置 OpenGL"></a>4.3 开始配置 OpenGL</h3><h4 id="4-3-1-添加-include-文件"><a href="#4-3-1-添加-include-文件" class="headerlink" title="4.3.1 添加 include 文件"></a>4.3.1 添加 include 文件</h4><ul>
-<li><p>右键项目 <code>OpenGLExercise</code> ，在弹出的选项中，单击 <code>属性</code></p>
-</li>
-<li><p>点击 <code>C/C++ —&gt; 常规 —&gt; 附加包含目录 —&gt; 编辑</code></p>
-<p><img src="./medias/loading.gif" data-original="https://pic.superbed.cn/item/5dc2de7e8e0e2e3ee940ffe3.jpg" alt="找到编辑1"></p>
-</li>
-<li><p>点击添加头文件。分别添加下载的 <code>glew</code> 和 <code>glfw</code> 文件夹下的 <code>include</code> 文件夹 (include 文件夹下是我们需要的头文件)，点击 <code>确定</code></p>
-<p> <img src="./medias/loading.gif" data-original="https://pic.superbed.cn/item/5dc2dfe58e0e2e3ee9411d2f.jpg" alt="添加include文件"></p>
-</li>
-</ul>
-<h4 id="4-3-2-添加-lib-文件"><a href="#4-3-2-添加-lib-文件" class="headerlink" title="4.3.2 添加 lib 文件"></a>4.3.2 添加 lib 文件</h4><ul>
-<li><p>点击 <code>链接器 —&gt; 常规 —&gt; 附加包含目录 —&gt; 编辑</code></p>
-<p>  <img src="./medias/loading.gif" data-original="https://pic.superbed.cn/item/5dc2e2458e0e2e3ee9417479.jpg" alt="找到编辑2"></p>
-</li>
-<li><p>分别添加下载的 <code>glew</code> 和 <code>glfw</code> 文件夹下的 <code>lib</code> 文件夹。</p>
-<ul>
-<li><p>当添加 <code>glew</code> 时，当选到 <code>lib</code> 文件夹后请继续选择，<code>lib -&gt; Release -&gt; Win32</code> , 请选择 <code>Win32</code> 后点击 “选择文件夹”（x64 会有莫名其妙的问题）</p>
-</li>
-<li><p>当添加 <code>glfw</code> 时，请选择对应版本，2019 版本请选择 <code>lib-vc2019</code></p>
-</li>
-</ul>
-<p><img src="./medias/loading.gif" data-original="https://ae01.alicdn.com/kf/Hb0fe1313ad4943b797cbdd59b5781188m.jpg" alt="添加lib文件"></p>
-</li>
-</ul>
-<h4 id="4-3-3-添加库依赖项"><a href="#4-3-3-添加库依赖项" class="headerlink" title="4.3.3 添加库依赖项"></a>4.3.3 添加库依赖项</h4><ul>
-<li><p>点击 <code>链接器 —&gt; 输入 —&gt; 附加依赖项 —&gt; 编辑</code></p>
-<p><img src="./medias/loading.gif" data-original="https://puui.qpic.cn/fans_admin/0/3_1192510060_1573053768870/0" alt="找到编辑3"></p>
-</li>
-<li><p>输入如下:</p>
-<p>  opengl32.lib</p>
-<p>  glfw3.lib</p>
-<p>  glew32s.lib</p>
-<p><img src="./medias/loading.gif" data-original="https://ae01.alicdn.com/kf/H776c29d1cce246318c26973b322882f6b.jpg" alt="添加输入"></p>
-</li>
-<li><p>最后确定</p>
-</li>
-</ul>
-<h2 id="5-程序调试"><a href="#5-程序调试" class="headerlink" title="5. 程序调试"></a>5. 程序调试</h2><h3 id="5-1-初步运行"><a href="#5-1-初步运行" class="headerlink" title="5.1 初步运行"></a>5.1 初步运行</h3><p>在之前的 main.cpp 中添加如下代码：（即初始化一个 OpenGL 窗口）</p>
-<pre><code>#include&lt;iostream&gt;
-#define GLEW_STATIC
-#include &lt;GL/glew.h&gt;
-#include&lt;GLFW\glfw3.h&gt;
-
-using namespace std;
-
-int main(int argc, char** argv[])
-{
-/*glewExperimental = GL_TRUE;
-if (glewInit()!=GLEW_OK)
-  {
-  cout &lt;&lt; &quot;failed to initalize GLEW&quot; &lt;&lt; endl;
-  return -1;
-  }*/
-
-  glfwInit();//初始化
-  glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);//配置GLFW
-  glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);//配置GLFW
-  glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);//
-  glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
-
-  GLFWwindow* window = glfwCreateWindow(800, 600, &quot;LearnOpenGL&quot;, nullptr, nullptr);
-  if (window==nullptr)
-  {
-    cout &lt;&lt; &quot;Failed to create GLFW window&quot; &lt;&lt; endl;
-    glfwTerminate();
-    return -1;
-  }
-  glfwMakeContextCurrent(window);
-  while (!glfwWindowShouldClose(window))
-  {
-    glfwPollEvents();
-    glfwSwapBuffers(window);
-  }
-  glfwTerminate();
-  return 0;
-
-
-}</code></pre><p><img src="./medias/loading.gif" data-original="https://ae01.alicdn.com/kf/H524182b59ab441b1bd3031fa4738d9c5u.jpg" alt="窗口显示"></p>
-<h3 id="5-2-解决库冲突"><a href="#5-2-解决库冲突" class="headerlink" title="5.2 解决库冲突"></a>5.2 解决库冲突</h3><p>当我们关掉程序回到 “错误列表” 中会发现</p>
-<p><img src="./medias/loading.gif" data-original="https://ae01.alicdn.com/kf/H5ff3c8a718bf4ba3bf4421889ba4c59d0.jpg" alt="出现问题"></p>
-<p>点击属性，找到“编辑”</p>
-<p><img src="./medias/loading.gif" data-original="https://puui.qpic.cn/fans_admin/0/3_1409075683_1573191343465/0" alt="解决库冲突"></p>
-<p>输入如下：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">MSVCRT.lib</span><br><span class="line">LIBCMT.lib</span><br></pre></td></tr></table></figure>
-
-<p>最后，点击一下右下角的应用，再点击确定。</p>
-<p><img src="./medias/loading.gif" data-original="https://puui.qpic.cn/fans_admin/0/3_15881579_1573191547079/0" alt="完善"></p>
-<p>注：如果往后还有库冲突，解决方法同理。</p>
-<h3 id="5-3-解决引言中的链接错误"><a href="#5-3-解决引言中的链接错误" class="headerlink" title="5.3 解决引言中的链接错误"></a>5.3 解决引言中的链接错误</h3><p>出现警告：<code>glew32s.lib(glew.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“glew32s.lib(glew.obj)”或在“F:\QinNian&#39;GitHub\Computer_Graphics\OpenGL_Learn\01_入门\01_OpenGL 环境配置\OpenGLExercise01\Debug\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样</code></p>
-<p>如果确认不需要<code>PDB</code>, 即不需要调试开源库, 完全可以在设置里将<code>/Zi</code>或<code>/ZI</code>去掉, 这样即能消除<code>warning</code>也能提升开源库编译速度</p>
-<p>将 <code>glew</code> 工程配置成不生成调试信息，或把调试信息直接生成到<code>.obj</code>文件中（而非<code>.pdb</code>文件）即可.</p>
-<p><code>项目属性 --&gt; 配置属性 --&gt; C/C++ --&gt; 常规 --&gt; 调试信息格式</code></p>
-<blockquote>
-<p>空表示不生成调试信息，</p>
-<p><code>C7</code>把调试信息直接生成到<code>.obj</code>文件中</p>
-<p>默认的<code>Zi</code>生成<code>.pdb</code>文件</p>
+                <h2 id="一、填空题"><a href="#一、填空题" class="headerlink" title="一、填空题"></a>一、填空题</h2><blockquote>
+<p>考点：</p>
+<p>图形学中涉及的坐标系、光栅扫描显示中的帧缓存的计算，平面几何投影的类型，曲线的逼近和拟合，基本几何变换定义</p>
 </blockquote>
-<p><img src="./medias/loading.gif" data-original="https://ae01.alicdn.com/kf/H544488a404b3411c998ef5bdf8cc3462N.jpg" alt="调试信息格式"></p>
-<h2 id="6-写在最后"><a href="#6-写在最后" class="headerlink" title="6. 写在最后"></a>6. 写在最后</h2><p>我哭了，终于弄好了！！！</p>
-<p><img src="./medias/loading.gif" data-original="https://ae01.alicdn.com/kf/H544488a404b3411c998ef5bdf8cc3462N.jpg" alt="成功"></p>
+<h2 id="二、选择题"><a href="#二、选择题" class="headerlink" title="二、选择题"></a>二、选择题</h2><blockquote>
+<p>考点：</p>
+<p>颜色模型，图形变换，光照（漫反射、镜面反射、环境光、折射），齐次坐标，根据几何变换矩阵分析变换结果</p>
+</blockquote>
+<h2 id="三、问答题"><a href="#三、问答题" class="headerlink" title="三、问答题"></a>三、问答题</h2><blockquote>
+<p>考点：</p>
+<p>图形学、图像学、模式识别学科的概念。阴极射线管显示器的构成及各部分功能。</p>
+</blockquote>
+<h2 id="四、程序补充题"><a href="#四、程序补充题" class="headerlink" title="四、程序补充题"></a>四、程序补充题</h2><blockquote>
+<p>考点：<br>基本几何变换相关函数、程序设计</p>
+</blockquote>
+<h2 id="五、计算题"><a href="#五、计算题" class="headerlink" title="五、计算题"></a>五、计算题</h2><blockquote>
+<p>考点：</p>
+<p>根据4个点的坐标，构造三次贝塞尔曲线，贝塞尔曲线的参数表达式，根据参数t的值计算曲线上点的坐标值。 </p>
+<p>给定某图形的顶点坐标，绕任一直线做镜像，旋转等变换，变换矩阵、变换过程、变换后的坐标值。</p>
+</blockquote>
 
             </div>
             <hr/>
@@ -629,7 +540,7 @@ if (glewInit()!=GLEW_OK)
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://qinnian.xyz/VS2019.html">https://qinnian.xyz/VS2019.html</a>
+                    <a href="https://qinnian.xyz/ComputerGraphicsNote.html">https://qinnian.xyz/ComputerGraphicsNote.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -667,8 +578,8 @@ if (glewInit()!=GLEW_OK)
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/OpenGL/">
-                                    <span class="chip bg-color">OpenGL</span>
+                                <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9B%BE%E5%BD%A2%E5%AD%A6/">
+                                    <span class="chip bg-color">计算机图形学</span>
                                 </a>
                             
                         </div>
@@ -839,7 +750,7 @@ if (glewInit()!=GLEW_OK)
         repo: 'qinnian.github.io',
         owner: 'qinnian',
         admin: "qinnian",
-        id: '2019-11-07T21-50-28',
+        id: '2019-12-09T00-00-00',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -860,9 +771,10 @@ if (glewInit()!=GLEW_OK)
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/ComputerGraphicsNote.html">
                     <div class="card-image">
@@ -880,9 +792,9 @@ if (glewInit()!=GLEW_OK)
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2019-12-09
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-12-09
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -895,6 +807,7 @@ if (glewInit()!=GLEW_OK)
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -913,24 +826,24 @@ if (glewInit()!=GLEW_OK)
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/VS2010.html">
+                <a href="/VS2019.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="Visual Studio 2010 配置 OpenGL">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="Visual Studio 2019 配置 OpenGL">
                         
-                        <span class="card-title">Visual Studio 2010 配置 OpenGL</span>
+                        <span class="card-title">Visual Studio 2019 配置 OpenGL</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            VS2010，跟我右边画一道彩虹
+                            VS2019，跟我左边画一条龙
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-11-01
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-11-07
                             </span>
                         <span class="publish-author">
                             
