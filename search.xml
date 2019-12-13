@@ -4,31 +4,6 @@
   
     
     <entry>
-      <title>计算机图形学知识点总结</title>
-      <link href="/ComputerGraphicsNote.html"/>
-      <url>/ComputerGraphicsNote.html</url>
-      
-        <content type="html"><![CDATA[<h2 id="一、填空题"><a href="#一、填空题" class="headerlink" title="一、填空题"></a>一、填空题</h2><blockquote><p>考点：</p><p>图形学中涉及的坐标系、光栅扫描显示中的帧缓存的计算，平面几何投影的类型，曲线的逼近和拟合，基本几何变换定义</p></blockquote><h2 id="二、选择题"><a href="#二、选择题" class="headerlink" title="二、选择题"></a>二、选择题</h2><blockquote><p>考点：</p><p>颜色模型，图形变换，光照（漫反射、镜面反射、环境光、折射），齐次坐标，根据几何变换矩阵分析变换结果</p></blockquote><h2 id="三、问答题"><a href="#三、问答题" class="headerlink" title="三、问答题"></a>三、问答题</h2><blockquote><p>考点：</p><p>图形学、图像学、模式识别学科的概念。阴极射线管显示器的构成及各部分功能。</p></blockquote><h2 id="四、程序补充题"><a href="#四、程序补充题" class="headerlink" title="四、程序补充题"></a>四、程序补充题</h2><blockquote><p>考点：<br>基本几何变换相关函数、程序设计</p></blockquote><h2 id="五、计算题"><a href="#五、计算题" class="headerlink" title="五、计算题"></a>五、计算题</h2><blockquote><p>考点：</p><p>根据4个点的坐标，构造三次贝塞尔曲线，贝塞尔曲线的参数表达式，根据参数t的值计算曲线上点的坐标值。 </p><p>给定某图形的顶点坐标，绕任一直线做镜像，旋转等变换，变换矩阵、变换过程、变换后的坐标值。</p></blockquote>]]></content>
-      
-      
-      <categories>
-          
-          <category> 考试 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 计算机图形学 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Visual Studio 2019 配置 OpenGL</title>
       <link href="/VS2019.html"/>
       <url>/VS2019.html</url>
